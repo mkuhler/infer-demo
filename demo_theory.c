@@ -2,7 +2,7 @@
 
 /* 
 * HOW TO RUN TESTS:
-* infer run -- gcc -c demo.c
+* infer run -- gcc -c demo_theory.c
 */
 
 /* 
