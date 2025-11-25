@@ -34,7 +34,7 @@ These annotations can be found at:
 
 One example of this is the @ThreadSafe annotation in the [demo_datarace.java](demo_datarace.java) example file. This contains a simple Java class that sets an integer member variable. When the @ThreadSafe annotation is present, Infer understands that this class should be safe to access concurrently, but is not. Adding the synchronized keyword resolves the THREAD_SAFETY_VIOLATION error correctly raised by Infer.
 
-Additionally, you can customize what tools are utilized in an Infer run. For example, RacerD performs thread safety analysis, and can be enabled/disabled depending on your troubleshooting preferences:
+Additionally, you can customize what checkers are utilized in an Infer run. For example, [RacerD](https://fbinfer.com/docs/checker-racerd) performs thread safety analysis, and can be enabled/disabled depending on your troubleshooting preferences:
 
 To enable racerD...
 ```infer --racerd -- javac -cp lib/infer-annotation-0.18.0.jar -d build demo_datarace.java```
