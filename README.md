@@ -15,7 +15,14 @@ An Infer run is performed in two phases: capture and analysis. These two phases 
 Infer utilizes two main concepts ito perform static analysis on code. **Separation Logic** reasons about local operations on memory in chunks, then composes these reasoning chunks together. **Bi-abduction** performs logical inference and analysis on the separation logic pre and post conditions. Navigate to the [Infer documentation](https://fbinfer.com/docs/separation-logic-and-bi-abduction/) on these topics to learn more, or view [demo_theory.c](demo_theory.c) for an example function with separation logic annotations.
 
 ## Workflows
-@TODO
+**Global Workflow**
+```infer run -- gcc -c demo_theory.c```
+
+**Differential Workflow**
+```infer run --reactive -- gcc -c demo_theory.c```
+
+**Differential Workflow - Combined Changes**
+```infer run --continue -- gcc -c demo_theory.c```
 
 ## Annotations and Thread Safety
 Infer can also utilize custom Java annotations to detect errors. Infer's annotations are compile-time markers that help the static analyzers understand how a class is supposed to behave.
