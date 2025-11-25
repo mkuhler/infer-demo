@@ -12,7 +12,7 @@ An Infer run is performed in two phases: capture and analysis. These two phases 
 ```infer analyze```
 
 ## Theory
-Infer utilizes two main concepts ito perform static analysis on code. **Separation Logic** reasons about local operations on memory in chunks, then composes these reasoning chunks together. **Bi-abduction** performs logical inference and analysis on the separation logic pre and post conditions. Navigate to the [Infer documentation](https://fbinfer.com/docs/separation-logic-and-bi-abduction/) on these topics to learn more, or view [demo_theory.c](demo_theory.c) for an example function with separation logic annotations.
+Infer utilizes two main concepts to perform static analysis on code. **Separation Logic** reasons about local operations on memory in chunks, then composes these reasoning chunks together. **Bi-abduction** performs logical inference and analysis on the separation logic pre and post conditions. Navigate to the [Infer documentation](https://fbinfer.com/docs/separation-logic-and-bi-abduction/) on these topics to learn more, or view [demo_theory.c](demo_theory.c) for an example function with separation logic annotations.
 
 ## Workflows
 **Global Workflow**
