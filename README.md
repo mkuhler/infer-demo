@@ -20,7 +20,7 @@ Infer utilizes two main concepts ito perform static analysis on code. **Separati
 ## Annotations and Thread Safety
 Infer can also utilize custom Java annotations to detect errors. Infer's annotations are compile-time markers that help the static analyzers understand how a class is supposed to behave.
 
-They don't change runtime behavior, are not enforceable, and are not involved in any code generation. They simply provide signals for Infer's analysis engine to manually provide it information on how classes are supposed to behave.
+They don't change runtime behavior, are not enforceable, and are not involved in any code generation. They simply allow the test engineer to manually provide signals to Infer's analysis engine.
 
 These annotations can be found at:
 ```import com.facebook.infer.annotation.*;```
