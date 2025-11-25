@@ -6,12 +6,15 @@
 */
 
 /* 
-* TEST 1: NULL DEREFERENCE
+* SECTION 1: SEPARATION LOGIC
 * In this example, a pointer is being
-* accessed before it is assigned in memory
-* if the condition x <= 0 is met.
-* The code is annotated with Infer
-* separation logic triples
+* accessed before it is assigned in memory,
+* and not properly freed after execution.
+*
+* The caller test_null_dereference contains
+* examples of infer bugs and bugfixes, while
+* the callee make_unsafe_ptr is annotated 
+* with Infer separation logic triples.
 */
 int* make_unsafe_ptr(int x) {
   // precondition: {true}
