@@ -44,3 +44,10 @@ To disable racerD...
 
 To only run racerD...
 ```infer --racerd-only -- javac -cp lib/infer-annotation-0.18.0.jar -d build demo_datarace.java```
+
+## Cost-Complexity Analysis
+In addition to error detection, Infer can utilize static analysis to perform cost-complexity calculations. Activated with the ```--cost``` command-line argument, a cost-report.json file is generated containing function definitions and corresponding asymptotic time complexity.
+
+You can use [read_reports.py](read_reports.py) to print this json file to the command-line in a human-readable table.
+
+Visit Infer's [Cost: Complexity Analysis documentation](https://fbinfer.com/docs/checker-cost) to learn more.
